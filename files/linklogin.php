@@ -16,7 +16,7 @@ if($result->num_rows==0){
     if($result->num_rows>0){
         $_SESSION['idutente']=$result->fetch_assoc()['id'];
     }else{
-        header("Location: index.php");
+        header("Location:index.php");
     }
 }
 

@@ -9,28 +9,9 @@
     </head>
   <body>
     <center>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">login</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <a href="login.php"><button class="btn btn-outline-primary">Login</button>
-            <a href="register.php"><button class="btn btn-outline-danger">Register</button></a>
-        </div>
-    </nav>
+    
     <main class="form-signin w-100 m-auto">
-     <form action="utilities/linklogin.php" method="post">
+     <form action="linklogin.php" method="post">
      <div class="separatore" style="border:100px solid white;">
      </div>
      <div class="bordo" style="text-align:center; width:25%; background-color:#ffffff; vertical-align:middle; text-align:center; border:3px solid black; border-radius:30px;" >

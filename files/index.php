@@ -1,6 +1,9 @@
 <?php
-require_once 'utilities/connection.php';
+require_once 'connection.php';
 session_start();
+if(!isset($_SESSION['idutente'])){
+    header("Location:login.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
