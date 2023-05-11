@@ -18,7 +18,7 @@
         <h1 class="h3 mb-3 fw-normal" style="whidth:50px; height:50px">Accedi</h1>
     
         <div style="text-align:center; justify-content: center; padding-left: 15%;">
-          <input type="text" name="username" class="form-control" id="floatingInput" placeholder="username" style="text-align:center; width:80%;" required>
+          <input type="text" name="nickname" class="form-control" id="floatingInput" placeholder="username" style="text-align:center; width:80%;" required>
         </div>
         <div style="text-align:center; justify-content: center; padding-left: 15%;">
           <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" style="text-align:center; width:80%;" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-,.]).{8,30}$" title="deve contenere almeno un carattere maiuscolo, uno minuscolo, uno speciale e deve essere lungo almeno 8 caratteri" reqiured>

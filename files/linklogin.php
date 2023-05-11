@@ -10,13 +10,15 @@ if($result->num_rows==0){
     sleep(3);
     header("Location: login.php");
 }else{
-    $pwd=sha2($pwd);
+    $pwd=hash('ripemd160', $pwd);
     $sql="SELECT * FROM users WHERE nickname='$uname' AND password='$pwd'";
     $result=$conn->query($sql);
     if($result->num_rows>0){
-        $_SESSION['idutente']=$result->fetch_assoc()['id'];
-    }else{
+        session_start();
+        $_SESSION['utente']=$uname;
         header("Location:index.php");
+    }else{
+        header("Location:login.php");
     }
 }
 

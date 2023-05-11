@@ -1,7 +1,7 @@
 <?php
-require_once 'connection.php';
 session_start();
-if(!isset($_SESSION['idutente'])){
+
+if(!isset($_SESSION['utente'])){
     header("Location:login.php");
 }
 ?>
@@ -14,7 +14,13 @@ if(!isset($_SESSION['idutente'])){
     
 </head>
 <body>
-    <a href="login.php"><button class="btn btn-outline-danger">Loggati</button></a>
+    <?php
+    if(!isset($_SESSION['utente'])){
+    ?>
+        <a href="login.php"><button class="btn btn-outline-danger">Loggati</button></a>
+    <?php
+    }
+    ?>
     <br>
     <label>tecnologie usate:</label>
     <br>

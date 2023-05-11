@@ -1,7 +1,7 @@
 <?php
-$hostname="localhost";
-$username="user";
-$password="user";
+$hostname="54.159.254.118";
+$username="admin";
+$password="4BgNp6y1Xqom";
 $database="main";
 $port="3306";
 // creo la connessione
